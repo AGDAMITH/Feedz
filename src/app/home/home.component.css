@@ -1,0 +1,240 @@
+.container {
+    width: 100%;
+    
+    
+  }
+  .top p {
+    margin: 10px;
+  }
+    .top-left {
+      float: left;
+      background-color: rgb(255, 255, 255);
+      text-align: left;
+      font-size: 50px;
+      font-weight: 500;
+      line-height: 65px;
+      width: 40%;
+      padding-top: 50px;
+      
+    }
+    
+    .top-right {
+      
+      float: left;
+      background-image: url(../../../img/question-mark.jpg);
+      text-align: center;
+      font-size: 40px;
+      color: white;
+      font-weight: 450;
+      line-height: 60px;
+      width: 60%;
+      
+      padding-bottom: 20px;
+    }
+  .bottom {
+    float: left;
+    width: 100%;
+    padding-top: 40px;
+    font-weight: 450;
+    font-size: 40px;
+    
+    line-height: 60px;
+  }
+    .centered {
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      width: 100%;
+      
+    }
+    
+    
+  
+    .sbar input {
+        width: 170px;
+        padding: 10px;
+        margin: 10px;
+        font-size: 30px;
+        border-color: steelblue;
+        border-width: 5px;
+        border-radius: 10px;
+    }
+    
+  .example-button-row button {
+      width: 200px;
+      padding: 10px;
+      margin: 10px;
+  }
+  .example-button-creatAcc button {
+      width: 200px;
+      padding: 10px;
+      margin: 10px;
+      background-color: rgb(0,100,0);
+      color: white;
+  
+  }
+  
+  .example-button-login button {
+      width: 200px;
+      padding: 10px;
+      margin: 10px;
+  }
+  .or {
+      font-size: 30px;
+  }
+  
+  
+  .bottom {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      float: left;
+      padding-top: 0px;
+  }
+  
+  .middle {
+    width: 100%;
+    float: left;
+  }
+  
+  .mid-body {
+    margin: 25px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 400;
+  }
+  
+  .sec1 {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  
+  }
+  .sec2 {
+    width: 100%;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .sec1-left, .sec2-left, .sec1-right, .sec2-right {
+    width: 50%;
+    float: left;
+  }
+  
+  .body {
+    margin: 15px;
+    border-radius: 10px;
+  }
+  
+  .body h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .body p {
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 400;
+  }
+  .body img {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  @media screen and (max-width: 1000px){
+    .top-left {
+      width: 100%;
+      padding-bottom: 50px;
+      font-size: 25px;
+      line-height: 45px;
+    }
+  
+    .top-right {
+      width: 100%;
+      font-size: 25px;
+      line-height: 45px;
+    }
+   
+    .bottom {
+      width: 100%;
+      line-height: 45px;
+      font-size: 25px;
+      text-align: left;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+      .sec1 {
+        width: 100%;
+        float: left;
+      
+      }
+      .sec2 {
+        width: 100%;
+        float: left;
+        display: flex; 
+        flex-flow: column;
+      }
+      
+      .sec1-left, .sec2-left, .sec1-right, .sec2-right {
+        width: 100%;
+        float: left;
+      }
+  
+      .sec2-left {
+        order: 2;
+      } 
+      .sec2-right {
+        order: 1;
+      }
+  }
+  
+  @media screen and (max-width: 700px){
+    .top-right{
+      font-size: 22px;
+      line-height: 45px;
+    }
+  
+    .top-left {
+      font-size: 25px;
+      line-height: 45px;
+    }
+    .bottom {
+      width: 100%;
+      line-height: 40px;
+      font-size: 25px;
+      text-align: left;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .mid-body {
+      margin: 25px;
+      margin-bottom: 0px;
+      padding: 0px;
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+    .body {
+      margin: 10px;
+    }
+    
+    .body h1 {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    .body p {
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+    .sec2 {
+      
+    margin-bottom: 0px;
+    }
+  
+    
+  }
