@@ -1,0 +1,25 @@
+<meta name="viewport" content="width-device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+<form class="signinFormCss" [formGroup]="signinForm" name="signinForm">
+
+    <h2>Sign In</h2>
+
+    <mat-form-field appearance="outline" class="inputField">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email" name="email" placeholder="Email">
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline" class="inputField">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password" name="password" placeholder="Password">
+    </mat-form-field>
+    
+
+    
+    <button mat-raised-button color="primary">Sign In</button>
+
+    <a href="../signup/signup.component.html">
+        Not a member yet..?
+    </a>
+
+</form>

@@ -1,24 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 
+
 @Component({
-  selector: 'app-signup',
-  templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.css'],
-  
-  
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class SignupComponent implements OnInit {
-  signupForm: FormGroup
+export class LoginComponent implements OnInit {
+
+  signinForm: FormGroup
   constructor(
   private  _formBuilder: FormBuilder
   ) { }
 
-  
-
   ngOnInit(): void {
     
-    this.signupForm = this._formBuilder.group({
+    this.signinForm = this._formBuilder.group({
       fullName: ['', Validators.required],
       email: ['', Validators.required, Validators.email],
       password: ['', Validators.required],
@@ -26,7 +24,7 @@ export class SignupComponent implements OnInit {
       
     })
 
-    this.signupForm.valueChanges.subscribe((value) => {
+    this.signinForm.valueChanges.subscribe((value) => {
       console.log(JSON.stringify(value));
     })
 

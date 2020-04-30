@@ -1,15 +1,44 @@
 <meta name="viewport" content="width-device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	
+    
+<form class="signupFormCss" [formGroup]="signupForm" name="signupForm">
 
-<form name="signUp" action="#" method="post">
     <h2>Sign Up</h2>
+    <mat-form-field appearance="outline" class="inputField">
+        <mat-label>Full Name</mat-label>
+        <input matInput formControlName="fullName" name="fullName" placeholder="placeholder">
+    </mat-form-field>
 
+    <mat-form-field appearance="outline" class="inputField">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email" name="email" placeholder="Email">
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline" class="inputField">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password" name="password" placeholder="Password">
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline" class="inputField">
+        <mat-label>Confirm Password</mat-label>
+        <input matInput type="password" formControlName="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+    </mat-form-field>
+
+    
+    <button mat-raised-button color="primary">Create Account</button>
+
+    <a href="">
+        Already have an account..?
+    </a>
+
+</form>
+
+<!-- <form name="signUp" action="#" method="post">
+    <h2>Sign Up</h2>
             <p>
                 <input id="fullName" name="fullName" type="text" placeholder="Full Name" ng-model="fullName" required>
                 <span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
                     </span>
             </p>
-
           <p>
               <input id="email" name="email" type="email" placeholder="Email" ng-model="email" required>
               <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
@@ -30,11 +59,10 @@
               ng-disabled="myForm.user.$dirty && myForm.user.$invalid || 
               myForm.email.$dirty && myForm.email.$invalid">
           </p>
-
           <a href="">
               Already have an account..?
           </a>
-      </form>
+      </form> -->
 
       <div id="message">
         <h3>Password must contain the following:</h3>
@@ -43,8 +71,6 @@
         <p id="number" class="invalid">A <b>number</b></p>
         <p id="length" class="invalid">Minimum <b>8 characters</b></p>
       </div>
-<<<<<<< HEAD
-=======
 
       <script>
         var myInput = document.getElementById("#psw");
@@ -107,7 +133,8 @@
 
         
         }
-      
-        </script>
+        
+            
 
->>>>>>> 745fbcf6c48d33ad7a6680e4cf9c967faf3140aa
+        
+        </script>

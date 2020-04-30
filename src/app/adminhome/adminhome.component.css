@@ -1,0 +1,57 @@
+body {
+    
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.sec1 {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sec2 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.left {
+    width: 32%;
+    float: left;
+    text-align: center;
+    margin-left: 18%;
+
+}
+
+.right {
+    width: 32%;
+    float: left;
+    text-align: center;
+    
+    margin-right: 18%;
+
+
+}
+.btn button {
+    
+    text-align: center;
+    font-size: 30px;
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    
+}
+.btn {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.btn1{
+    background-color: maroon;
+}
+
