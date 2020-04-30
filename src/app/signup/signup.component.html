@@ -1,7 +1,14 @@
 <meta name="viewport" content="width-device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	
+    
+<form class="signupFormCss" [formGroup]="signupForm" name="signupForm">
+    <mat-form-field appearance="outline" class="inputField">
+        <mat-label>Username</mat-label>
+        <input matInput formControlName="fullName" name="fullName" placeholder="placeholder">
+       
+    </mat-form-field>
+</form>
 
-<form name="signUp" action="#" method="post">
+<!-- <form name="signUp" action="#" method="post">
     <h2>Sign Up</h2>
 
             <p>
@@ -34,7 +41,7 @@
           <a href="">
               Already have an account..?
           </a>
-      </form>
+      </form> -->
 
       <div id="message">
         <h3>Password must contain the following:</h3>
