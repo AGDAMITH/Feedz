@@ -129,6 +129,9 @@
           float: left;
           margin-right: 0;
       }
+      .searchbar input {
+          width: 100%;
+      }
       .iconbar {
           flex-direction: row;
           width: 100%;
