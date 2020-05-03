@@ -1,0 +1,21 @@
+<form class="creatEventCss" [formGroup]="creatEventForm" name="creatEventForm">
+    <h2>Create an event.</h2>
+    <mat-form-field appearance="outline" class="inputField">
+        <mat-label>Event Name</mat-label>
+        <input matInput formControlName="eventName" name="eventName" placeholder="Event Name">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="inputField">
+        <mat-label>Start Time</mat-label>
+        <input matInput type="date" formControlName="startDate" name="startDate" placeholder="Start Date">
+        <input matInput type="time" formControlName="startTime" name="startTime" placeholder="Start Time">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="inputField">
+        <mat-label>End Time</mat-label>
+        <input matInput type="date" formControlName="EndDate" name="EndDate" placeholder="End Date">
+        <input matInput type="time" formControlName="EndTime" name="EndTime" placeholder="End Time">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary">Create Event</button>
+</form>

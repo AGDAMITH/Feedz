@@ -12,6 +12,10 @@ import { NavbarnewComponent } from './navbarnew/navbarnew.component';
 import { SignupComponent } from './signup/signup.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
+import { LoginComponent } from './login/login.component';
+import { AdminhomeComponent } from './adminhome/adminhome.component';
+import { ActivityComponent } from './tables/activity/activity.component';
+import { CreateEventComponent } from './create-event/create-event.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import {MatInputModule} from '@angular/material/input';
     HomeComponent,
     NavbarnewComponent,
     SignupComponent,
+    LoginComponent,
+    AdminhomeComponent,
+    ActivityComponent,
+    CreateEventComponent,
   ],
   imports: [
     BrowserModule,
