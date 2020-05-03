@@ -26,14 +26,14 @@ you cant give a description instead you save it right away
         </table> -->
 
 
-        <table border="1" class="table" *ngFor="let event of submittedEvents">
+        <table border="1" class="table" >
             <tr>
             <th>Event name</th>
             <th>Start time</th>
             <th>End time</th>
             </tr>
 
-            <tr>
+            <tr *ngFor="let event of submittedEvents">
                 <td>{{event.eventName}}</td>
                 <td>{{event.startDate}}</td>
                 <td>{{event.endDate}}</td>
