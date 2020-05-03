@@ -14,8 +14,6 @@ export class SignupComponent implements OnInit {
   private  _formBuilder: FormBuilder
   ) { }
 
-  
-
   ngOnInit(): void {
     
     this.signupForm = this._formBuilder.group({
@@ -29,8 +27,6 @@ export class SignupComponent implements OnInit {
     this.signupForm.valueChanges.subscribe((value) => {
       console.log(JSON.stringify(value));
     })
-
-    
   }
 
 }
