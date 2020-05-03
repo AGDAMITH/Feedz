@@ -8,6 +8,8 @@ import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms'
 })
 export class CreateEventComponent implements OnInit {
   creatEventForm: FormGroup
+  formValue:any
+  submittedEvents: any[]=[]
   constructor(
     private  _formBuilder: FormBuilder
     ) { }
@@ -20,6 +22,21 @@ export class CreateEventComponent implements OnInit {
       EndDate: ['', Validators.required],
       EndTime: ['', Validators.required]
     })
+
+    this.creatEventForm.valueChanges.subscribe((value) => {
+      // console.log(value)
+       this.formValue = value
+    })
   }
 
+
+
+  createEvent(){
+      
+      this.submittedEvents.push(this.formValue)
+       this.formValue = null
+
+      
+
+  }
 }
